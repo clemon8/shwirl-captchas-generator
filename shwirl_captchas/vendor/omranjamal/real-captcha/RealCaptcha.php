@@ -356,7 +356,8 @@ class RealCaptcha{
 
         $offset = rand(0, $assumtion);
         $font = $settings["fonts_dir"].$fonts[rand(0,count($fonts)-1)];
-        $curve_intensity = rand(10, ceil((30/100)*$height));
+        //$curve_intensity = rand(10, ceil((30/100)*$height));
+        $curve_intensity = rand(10, ceil((50/100)*$height));
 
         $plus = rand(0,1);
         if(!$plus){
@@ -370,7 +371,7 @@ class RealCaptcha{
             extract($this->xy_theta($cursor, $offset, $curve_intensity, $sign, $assumtion));
 
             //from the top
-                $y_coordinate = $canvas_height-(30/100)*$height+$y;
+                $y_coordinate = $canvas_height-(50/100)*$height+$y;
                 $letter = imagettftext($canvas, $font_size, $theta/* Rotation */, $cursor, $y_coordinate, imagecolorallocate($canvas, $settings["text_color"][0], $settings["text_color"][1], $settings["text_color"][2]), $font, $raw[$i] );
                 
                 if(!$letter){
