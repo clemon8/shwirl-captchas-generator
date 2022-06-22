@@ -3,10 +3,10 @@
 
 ### - REQUIREMENTS - ### -----------------------------------------------------------------
 
-Windows 10 or Higher
-PHP 7.4 or lower
-Composer
-Visual Studio Code
+Windows 10 or MacOS
+PHP 7.4 or lower (https://www.apachefriends.org/fr/download.html)
+Composer (https://getcomposer.org/)
+Visual Studio Code (https://code.visualstudio.com/)
 
 Vscode Extensions:
     -Code Runner
