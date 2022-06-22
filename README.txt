@@ -1,7 +1,19 @@
 ######## SHWIRL CAPTCHAS README #########
 
 
-Here is how the working repository should look like
+### - REQUIREMENTS - ### -----------------------------------------------------------------
+
+Windows 10 or Higher
+PHP 7.4 or lower
+Composer
+Visual Studio Code
+
+Vscode Extensions:
+    -Code Runner
+    -PHP Intelephense
+
+
+### - ARCHITECTURE - ### -----------------------------------------------------------------
 
 └───Captcha Generator
     ├───OUTPUT
@@ -17,12 +29,12 @@ Here is how the working repository should look like
                         └───fonts2
 
 important directories:
-OUPUT: is where the file.jpg default image is stored and overwritten after each re-run of te program
-fonts and fonts2: folders where you can store sets of fonts for the program to choose from when generating captchas
+    -OUPUT: is where the file.jpg default image is stored and overwritten after each re-run of te program
+    -fonts and fonts2: folders where you can store sets of fonts for the program to choose from when generating captchas
 
 
 
---- How to operate the shwirl captchas generator: ---
+### - HOW TO OPERATE - ### -----------------------------------------------------------------
 
 - Open Visual Studio Code
 
@@ -39,7 +51,7 @@ fonts and fonts2: folders where you can store sets of fonts for the program to c
 - to save the image that you like I suggest you to rename the current "file.jpg" to something else so it doesnt get overwritten by the next re-run
 
 
---- How to customize the captchas: ---
+### - HOW TO CUSTOMIZE - ### -----------------------------------------------------------------
 
 - Height and Width: pretty straight forward, just change the values (in pixel) at line 24 & 25.
 
@@ -56,3 +68,10 @@ just add as many words as you want as long as they are separated by a ",".
 if a word doesn't appear on the image or is only one or two letters long try adding "\n" in front of it. example: return array("stroopwaffles","\n+", "milk", "\n=", "love");
 
 - to modify the jpg compression quality just head over to line 48 and change the number in the last argument of the "file" function by anything between 1 and 100. (1 being the worst image compression you have ever seen)
+
+
+
+
+### - CONTACT - ### -----------------------------------------------------------------
+
+Clément Zelter - <www.clement-zelter.fr>
