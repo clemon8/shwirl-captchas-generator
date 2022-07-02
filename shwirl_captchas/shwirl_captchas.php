@@ -21,7 +21,7 @@ function random_color_array(){
 $captcha = new omranjamal\RealCaptcha\RealCaptcha(array(
 
 	//HEIGHT AND WIDTH SETTINGS (in pixels)
-	"height" => 600,
+	"height" => 300,
 	"width" => 600,
 
 	//COLOR CHOICES
@@ -42,7 +42,7 @@ $captcha = new omranjamal\RealCaptcha\RealCaptcha(array(
 ));
 
 $captcha->textFunction(function(){
-    return array("stupid","idiot");
+    return array("\ni","like", "it", "LOUD");
 });
 
 
@@ -62,10 +62,10 @@ $captcha->generate()->file("OUTPUT/file.jpg" ,"jpg", 50); // you can change the 
 
 //Batch Generation (different colors):
 
-/*for ($x = 0; $x <= 300; $x++) {
+/*for ($x = 0; $x <= 100; $x++) {
 	$captcha = new omranjamal\RealCaptcha\RealCaptcha(array(
-		"height" => 400,
-		"width" => 400,
+		"height" => 100,
+		"width" => 200,
 		"background_color" => random_color_array(), //Bright Red
 		"text_color" => random_color_array(), //White
 		"source" => omranjamal\RealCaptcha\RealCaptcha::uFUNCTION,
@@ -74,7 +74,7 @@ $captcha->generate()->file("OUTPUT/file.jpg" ,"jpg", 50); // you can change the 
 	));
 	
 	$captcha->textFunction(function(){
-		return array("stupid","idiot");
+		return array("stupid","idiot!");
 	});
 	
 	$captcha->generate()->file("OUTPUT/file{$x}.jpg" ,"jpg", 50);
